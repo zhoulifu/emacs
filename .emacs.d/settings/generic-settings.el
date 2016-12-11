@@ -10,4 +10,8 @@
 (line-number-mode 1)
 (column-number-mode 1)
 
+(menu-bar-mode 0)
+
+(setq-default indent-tabs-mode nil)
+
 (provide 'generic-settings)
