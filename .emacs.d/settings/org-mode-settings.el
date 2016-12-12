@@ -23,7 +23,11 @@
    ("CANCELLED" :foreground "forest green" :weight bold)))
 
 (add-hook 'org-mode-hook
- (lambda () (set-face-attribute 'org-level-4 nil :foreground "white")
-            (define-key org-mode-map (kbd "×") (kbd "*"))))
+ (lambda ()
+   (set-face-attribute 'org-level-1 nil :height 1.6)
+   (set-face-attribute 'org-level-2 nil :height 1.4)
+   (set-face-attribute 'org-level-3 nil :height 1.2)
+   (set-face-attribute 'org-level-4 nil :foreground "#657b83")
+   (define-key org-mode-map (kbd "×") (kbd "*"))))
 
 (provide 'org-mode-settings)
